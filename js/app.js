@@ -3,7 +3,7 @@ if (navigator.serviceWorker) {
     if (URL.includes('localhost')) {
         navigator.serviceWorker.register('sw.js');
     } else {
-        navigator.serviceWorker.register('pwa-twittor/sw.js');
+        navigator.serviceWorker.register('/pwa-twittor/sw.js');
     }
 }
 // Referencias de jQuery
