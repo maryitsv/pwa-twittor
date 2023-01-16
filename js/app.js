@@ -1,6 +1,10 @@
 if (navigator.serviceWorker) {
     // with this we add the sw to the app
-    navigator.serviceWorker.register('sw.js');
+    if (URL.includes('localhost')) {
+        navigator.serviceWorker.register('sw.js');
+    } else {
+        navigator.serviceWorker.register('pwa-twittor/sw.js');
+    }
 }
 // Referencias de jQuery
 
